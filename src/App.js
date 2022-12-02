@@ -81,7 +81,7 @@ class App extends React.Component {
 				<div className="questions">
 				</div>
                 <div className = "Card">
-                    <Card sx></Card>
+                    <Box></Box>
                 </div>
             </div>
         );
