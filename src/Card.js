@@ -56,4 +56,40 @@ const bull = (
         </CardActions>
       </Card>
     );
+
+    export default function ColourUse() {
+      return (
+        <Card sx={{ minWidth: 275 }}>
+          <CardContent>
+            <Typography variant="h5" component="div">
+              Is the colour used for aesthetic or data visualisation?
+            </Typography>
+          </CardContent>
+          <CardActions>
+          <FormControl component="fieldset">
+        <FormLabel component="legend">choose 1</FormLabel>
+        <FormGroup aria-label="position" row>
+          <FormControlLabel
+            value="Aesthetics"
+            control={<Checkbox />}
+            label="Aesthetics"
+            labelPlacement="start"
+          />
+          <FormControlLabel
+            value="Data Visualisation"
+            control={<Checkbox />}
+            label="Date Visualisation"
+            labelPlacement="start"
+          />
+          <FormControlLabel
+            value="n\a"
+            control={<Checkbox />}
+            label="n\a"
+            labelPlacement="start"
+          />
+        </FormGroup>
+      </FormControl>
+          </CardActions>
+        </Card>
+      );
   }
