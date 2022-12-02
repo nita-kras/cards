@@ -3,6 +3,8 @@ import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
+import Box from './Card2';
+import BasicCard from './Card2';
 
 
 class App extends React.Component {
