@@ -24,7 +24,7 @@ const bull = (
     </Box>
   );
   
-  export default function BasicCard() {
+  export function BasicCard() {
     return (
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
@@ -61,7 +61,7 @@ const bull = (
       
     );
     }
-    export default function BasicCard2() {
+    export function BasicCard2() {
       return (
         <Card s1={{ minWidth: 275 }}>
         <CardContent>
