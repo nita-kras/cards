@@ -38,6 +38,11 @@
   min-height: 275px;
   color: mediumpurple;
 }
+.Card2{
+  min-width: 275px;
+  min-height: 275px;
+  color: mediumpurple;
+}
 
 img {
   max-width: 750px;
