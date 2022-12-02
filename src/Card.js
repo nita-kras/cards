@@ -31,7 +31,7 @@ const bull = (
         </CardContent>
         <CardActions>
         <FormControl component="fieldset">
-      <FormLabel component="legend">Label placement</FormLabel>
+      <FormLabel component="legend">choose 1</FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="colour"
