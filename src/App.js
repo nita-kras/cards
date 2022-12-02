@@ -80,7 +80,9 @@ class App extends React.Component {
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 				<div className="questions">
 				</div>
-                <Card className="q1"></Card>
+                <div className = "Card">
+                    
+                </div>
             </div>
         );
     }
