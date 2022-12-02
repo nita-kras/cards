@@ -3,8 +3,7 @@ import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
-import Box from './Card2';
-import BasicCard from './Card2';
+
 
 
 class App extends React.Component {
@@ -86,8 +85,8 @@ class App extends React.Component {
                 <div className = "Card">
                     <Box sx = {BasicCard()}/>
                 </div>
-                <div className = "Card2">
-                    <Box sx = {BasicCard()}/>
+                <div className = "Card">
+                    <Box s1 = {BasicCard2()}/>
                 </div>
             </div>
         );
