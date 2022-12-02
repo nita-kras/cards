@@ -18,12 +18,13 @@ const bull = (
       sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
     >
       •
-      s1={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    
+      component="span"
+      s2={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+      •
     </Box>
   );
   
-  function BasicCard() {
+  export default function BasicCard() {
     return (
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
@@ -60,8 +61,7 @@ const bull = (
       
     );
     }
-    
-    function BasicCard2() {
+    export default function BasicCard2() {
       return (
         <Card s1={{ minWidth: 275 }}>
         <CardContent>
