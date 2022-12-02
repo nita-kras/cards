@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Figure from "./Figure";
-
+import Box from "./Card";
 
 
 class App extends React.Component {
