@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
+import BasicCard from './Card';
 
 
 class App extends React.Component {
@@ -81,7 +82,7 @@ class App extends React.Component {
 				<div className="questions">
 				</div>
                 <div className = "Card">
-                    <Card sx />
+                    <Card sx = {BasicCard()}/>
                 </div>
             </div>
         );
