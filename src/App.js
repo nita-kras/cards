@@ -3,7 +3,8 @@ import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
-import Grid, { SolidGameCardDemo } from "./Card2";
+import Grid from "./Card2";
+import SolidGameCardDemo from './Card2';
 
 
 class App extends React.Component {
