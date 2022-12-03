@@ -1,3 +1,4 @@
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -30,7 +31,7 @@ const bull = (
         </CardContent>
         <CardActions>
         <FormControl component="fieldset">
-      <FormLabel component="legend">Label placement</FormLabel>
+      <FormLabel component="legend">choose 1</FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="colour"
