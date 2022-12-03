@@ -3,7 +3,7 @@ import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
-import Box from "./Card2";
+import Grid, { SolidGameCardDemo } from "./Card2";
 
 
 class App extends React.Component {
@@ -86,7 +86,7 @@ class App extends React.Component {
                     <Box sx = {BasicCard()}/>
                 </div>
                 <div className = "Card2">
-                    <Box s2 = {BasicCard2()}/>
+                    <Grid s2 = {SolidGameCardDemo}/>
                 </div>
             </div>
         );
