@@ -1,12 +1,12 @@
 .App {
   text-align: bottom;
   background-color: #282c34;
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: row;
   align-items: bottom;
   justify-content: bottom;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(2px + 2vmin);
   color: #61dafb;
 }
 
@@ -34,11 +34,12 @@
 }
 
 .Card{
+  display: flex;
+  flex-direction: row;
+  align-items: bottom;
+  justify-content: bottom;
   min-width: 275px;
   min-height: 275px;
-  max-width: 275px;
-  max-height: 315px;
-  background-color: rgb(207, 172, 184);
   border-color: black;
 }
 
