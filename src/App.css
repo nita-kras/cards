@@ -1,8 +1,8 @@
 .App {
   display: flex;
-  background-color: #282c34;
   font-size: calc(2px + 2vmin);
   color: #61dafb;
+  background-color: rgb(25, 25, 39);
 }
 
 .Figure {
@@ -19,10 +19,10 @@
 .buttons {
   margin: 80px;
   background-color: transparent;
-  color: #61dafb;
+  color: maroon;
   border-radius: 5px;
   border-width: medium;
-  border-color: #61dafb;
+  border-color: maroon;
   width: 7vw;
   height: 4vh;
   font-size: 16px;
@@ -33,8 +33,6 @@
   min-width: 275px;
   min-height: 275px;
   border-color: #61dafb;
-  background-color: maroon;
-  color: #61dafb;
 }
 
 img {
@@ -48,16 +46,10 @@ img {
 
 /* hide scrollbar and prevent scrolling */
 #div-1 { overflow: hidden; }
-#div-2 { overflow: visible; }
+#div-2 { overflow: hidden; }
 
 /* other styling */
-div {
-  border: solid 5px black;
-  border-radius: 5px;
-  height: 100px;
-  margin: 20px;
-  width: 300px;
-}
+
 
 * {
   background-color: #EAF0F6;
