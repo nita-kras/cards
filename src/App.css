@@ -1,5 +1,5 @@
 .App {
-
+  display: flex;
   background-color: #282c34;
   font-size: calc(2px + 2vmin);
   color: #61dafb;
@@ -29,6 +29,7 @@
 }
 
 .Card{
+  display: flex;
   min-width: 275px;
   min-height: 275px;
   border-color: #61dafb;
