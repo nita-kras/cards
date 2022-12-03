@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   min-width: 400px;
-  max-width: 450px;
+  max-width: 2000px;
   min-height: 450px;
   max-height: 450px;
 }
@@ -44,4 +44,23 @@ img {
 
 .metadata {
   margin: 10px;
+}
+
+/* hide scrollbar and prevent scrolling */
+#div-1 { overflow: hidden; }
+#div-2 { overflow: visible; }
+
+/* other styling */
+div {
+  border: solid 5px black;
+  border-radius: 5px;
+  height: 100px;
+  margin: 20px;
+  width: 300px;
+}
+
+* {
+  background-color: #EAF0F6;
+  color: #2D3E50;
+  font-family: 'Avenir';
 }
