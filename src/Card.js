@@ -50,6 +50,7 @@ export default function BasicCard() {
     </FormControl>
         </CardActions>
       </Card>
+
       <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
@@ -82,6 +83,158 @@ export default function BasicCard() {
     </FormControl>
         </CardActions>
       </Card>
+
+      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <CardContent>
+          <Typography variant="h5" component="div">
+            Is a colour mapping legend shown?
+          </Typography>
+        </CardContent>
+        <CardActions>
+        <FormControl component="fieldset">
+      <FormLabel component="legend">choose 1</FormLabel>
+      <FormGroup aria-label="position" row>
+        <FormControlLabel
+          value="Yes"
+          control={<Checkbox />}
+          label="Yes"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="No"
+          control={<Checkbox />}
+          label="No"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="not sure"
+          control={<Checkbox />}
+          label="not sure"
+          labelPlacement="start"
+        />
+      </FormGroup>
+    </FormControl>
+        </CardActions>
+      </Card>
+
+      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <CardContent>
+          <Typography variant="h5" component="div">
+            How many colour are used in the image?
+          </Typography>
+        </CardContent>
+        <CardActions>
+        <FormControl component="fieldset">
+      <FormLabel component="legend">choose 1</FormLabel>
+      <FormGroup aria-label="position" row>
+        <FormControlLabel
+          value="Under 100"
+          control={<Checkbox />}
+          label="Under 100"
+          labelPlacement="start"
+        />
+        <TextField id="filled-basic" label="How Many?" variant="filled" />
+        <FormControlLabel
+          value="10+"
+          control={<Checkbox />}
+          label="10+"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="not sure"
+          control={<Checkbox />}
+          label="not sure"
+          labelPlacement="start"
+        />
+      </FormGroup>
+    </FormControl>
+        </CardActions>
+      </Card>
+
+      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <CardContent>
+          <Typography variant="h5" component="div">
+            What kind of colour mapping is used?
+          </Typography>
+        </CardContent>
+        <CardActions>
+        <FormControl component="fieldset">
+      <FormLabel component="legend">choose 1</FormLabel>
+      <FormGroup aria-label="position" row>
+        <FormControlLabel
+          value="Categorical"
+          control={<Checkbox />}
+          label="Categorical"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="Continuous"
+          control={<Checkbox />}
+          label="Continuous"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="not sure"
+          control={<Checkbox />}
+          label="not sure"
+          labelPlacement="start"
+        />
+      </FormGroup>
+    </FormControl>
+        </CardActions>
+      </Card>
+
+      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <CardContent>
+          <Typography variant="h5" component="div">
+            On a scale of 1-5 (1 being easy and 5 being difficult), how difficult do you find answering the questions about the image? 
+          </Typography>
+        </CardContent>
+        <CardActions>
+        <FormControl component="fieldset">
+      <FormLabel component="legend">choose 1</FormLabel>
+      <FormGroup aria-label="position" row>
+        <FormControlLabel
+          value="1"
+          control={<Checkbox />}
+          label="1"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="2"
+          control={<Checkbox />}
+          label="2"
+          labelPlacement="start"
+        />
+        <FormControlLabel
+          value="3"
+          control={<Checkbox />}
+          label="3"
+          labelPlacement="start"
+        />
+                <FormControlLabel
+          value="4"
+          control={<Checkbox />}
+          label="4"
+          labelPlacement="start"
+        />
+                <FormControlLabel
+          value="5"
+          control={<Checkbox />}
+          label="5"
+          labelPlacement="start"
+        />
+                <FormControlLabel
+          value="not sure"
+          control={<Checkbox />}
+          label="not sure"
+          labelPlacement="start"
+        />
+      </FormGroup>
+    </FormControl>
+        </CardActions>
+      </Card>
+
     </Box>
   );
 }
