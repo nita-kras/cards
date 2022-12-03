@@ -19,7 +19,7 @@ export default function BasicCard() {
       component="ul"
       sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', p: 0, m: 0 }}
     >
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             What is the image type?
@@ -52,7 +52,7 @@ export default function BasicCard() {
         </CardActions>
       </Card>
 
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             What is the colour used for?
@@ -85,7 +85,7 @@ export default function BasicCard() {
         </CardActions>
       </Card>
 
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             Is a colour mapping legend shown?
@@ -118,7 +118,7 @@ export default function BasicCard() {
         </CardActions>
       </Card>
 
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             How many colour are used in the image?
@@ -129,9 +129,9 @@ export default function BasicCard() {
       <FormLabel component="legend">choose 1</FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
-          value="Under 100"
+          value="Under 10"
           control={<Checkbox />}
-          label="Under 100"
+          label="Under 10"
           labelPlacement="start"
         />
         <TextField id="filled-basic" label="How Many?" variant="filled" />
@@ -152,7 +152,7 @@ export default function BasicCard() {
         </CardActions>
       </Card>
 
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             What kind of colour mapping is used?
@@ -185,7 +185,7 @@ export default function BasicCard() {
         </CardActions>
       </Card>
 
-      <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+      <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
             On a scale of 1-5 (1 being easy and 5 being difficult), how difficult do you find answering the questions about the image? 
