@@ -83,9 +83,6 @@ class App extends React.Component {
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 				<div className="questions">
 				</div>
-                <div className = "Card">
-                    <Box sx = {BasicCard()}/>
-                </div>
                 <div className = "Card2">
                     <Grid s2 = {SolidGameCardDemo}/>
                 </div>
