@@ -1,4 +1,3 @@
-
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -20,37 +19,8 @@ const bull = (
       •
     </Box>
   );
-
-  export default function ShowcaseCardDemo(){
-    const styles = useStyles();
-    const gap = { xs: 1, sm: 1.5, lg: 2 }
-    return (
-      <Grid container spacing={4} justify={'center'}>
-        <Grid item xs={12} sm={4} md={3}>
-          <Column className={styles.card} p={{ xs: 0.5, sm: 0.75, lg: 1 }} gap={gap}>
-            <CardHeader />
-            <Item>
-              <Box minHeight={200} bgcolor={'#F4F7FA'} borderRadius={8} />
-            </Item>
-            <BasicProfile />
-          </Column>
-        </Grid>
-        <Grid item xs={12} sm={8} lg={7}>
-          <Row className={styles.card} p={{ xs: 0.5, sm: 0.75, lg: 1 }} gap={gap}>
-            <Item grow>
-              <Box minHeight={200} bgcolor={'#F4F7FA'} borderRadius={8} />
-            </Item>
-            <Column>
-              <CardHeader />
-              <BasicProfile position={'bottom'} />
-            </Column>
-          </Row>
-        </Grid>
-      </Grid>
-    );
-  }
   
-  const BasicCard = Box => {
+  export default function BasicCard() {
     return (
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
@@ -84,10 +54,5 @@ const bull = (
     </FormControl>
         </CardActions>
       </Card>
-      
     );
-
-
-    
   }
-   
