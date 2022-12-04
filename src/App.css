@@ -19,10 +19,10 @@
 .buttons {
   margin: 80px;
   background-color: transparent;
-  color: maroon;
+  color: rgb(57, 197, 197);
   border-radius: 5px;
   border-width: medium;
-  border-color: maroon;
+  border-color: rgb(57, 197, 197);
   width: 7vw;
   height: 4vh;
   font-size: 16px;
@@ -44,15 +44,3 @@ img {
   margin: 10px;
 }
 
-/* hide scrollbar and prevent scrolling */
-#div-1 { overflow: hidden; }
-#div-2 { overflow: hidden; }
-
-/* other styling */
-
-
-* {
-  background-color: #EAF0F6;
-  color: #2D3E50;
-  font-family: 'Avenir';
-}
