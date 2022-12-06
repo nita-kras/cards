@@ -1,8 +1,8 @@
 .App {
   display: flex;
   font-size: calc(2px + 2vmin);
-  color: #61dafb;
-  background-color: rgb(25, 25, 39);
+  color: black;
+  background-color: whitesmoke;
 }
 
 .Figure {
@@ -22,7 +22,7 @@
   color: rgb(57, 197, 197);
   border-radius: 5px;
   border-width: medium;
-  border-color: rgb(57, 197, 197);
+  border-color: black;
   width: 7vw;
   height: 4vh;
   font-size: 16px;
@@ -32,7 +32,7 @@
  
   min-width: 275px;
   min-height: 275px;
-  border-color: #61dafb;
+  border-color: black;
 }
 
 img {
