@@ -1,12 +1,6 @@
 .App {
-  margin: 30px;
-  align-items: center;
-  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
+  font-size: calc(2px + 2vmin);
   color: black;
   background-color: whitesmoke;
 }
@@ -34,7 +28,8 @@
   font-size: 16px;
 }
 
-.Box{
+.Card{
+ 
   min-width: 275px;
   min-height: 275px;
   border-color: black;
