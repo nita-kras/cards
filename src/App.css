@@ -19,7 +19,11 @@
 .buttons {
   margin: 80px;
   background-color: transparent;
+<<<<<<< HEAD
   color: black;
+=======
+  color: rgb(57, 197, 197);
+>>>>>>> parent of f27192a (change backgroudn)
   border-radius: 5px;
   border-width: medium;
   border-color: black;
