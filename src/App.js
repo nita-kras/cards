@@ -92,12 +92,6 @@ class App extends React.Component {
     }
 
 
-    render(){
-        return (
-          <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
-        );
-     }
-
     
 }
 
