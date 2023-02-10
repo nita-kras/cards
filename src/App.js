@@ -4,6 +4,7 @@ import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
 
+var perf = require('./App.html');
 
 class App extends React.Component {
     constructor(props) {
@@ -69,43 +70,11 @@ class App extends React.Component {
         document.title = "Figure Viewer";
         let figureInfo = this.getFigureInfo(this.state.currentFigureIndex);
         return (
-            <div className="App">
-                <div className="metadata">
-                    <p>Title: {figureInfo.name}</p>
-                    <p>Year: {figureInfo.year}</p>
-                    <p>DOI: {figureInfo.doi}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
-                <div className="Figure">
-                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
-                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
-				<div className="questions">
-				</div>
-                <div className = "Card">
-                    <Box sx = {BasicCard()}/>
-                </div>
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
         );
     }
 
-    forms(){
-        <form action="signup.html" method="post" id="signup">
-	<h1>Sign Up</h1>
-	<div class="field">
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" placeholder="Enter your fullname" />
-		<small></small>
-	</div>
-	<div class="field">
-		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" placeholder="Enter your email address" />
-		<small></small>
-	</div>
-	<button type="submit">Subscribe</button>
-</form>
-    }
+
 
     
 }
