@@ -70,7 +70,6 @@ class App extends React.Component {
         document.title = "Figure Viewer";
         let figureInfo = this.getFigureInfo(this.state.currentFigureIndex);
         return (
-            
             <div className="App">
                 <div className="metadata">
                     <p>Title: {figureInfo.name}</p>
@@ -93,6 +92,11 @@ class App extends React.Component {
     }
 
 
+    render(){
+        return (
+          <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
+        );
+     }
 
     
 }
