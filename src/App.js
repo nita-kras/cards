@@ -134,8 +134,7 @@ class App extends React.Component {
                 name = "diff"
                 id = "diff"
                 />
-                    <Button type="submit" variant="outlined">Submit</Button>
-
+                    <input type = "submit" value = "Submit Annotations"/>
                 </form>
             </div>
         );
