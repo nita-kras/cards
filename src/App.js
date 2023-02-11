@@ -72,6 +72,19 @@ class App extends React.Component {
         }
     }
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          fignum: '',
+          imgC: '',
+          colUse: '',
+          mapL: '',
+          colN : '',
+          colMap : '',
+          diff : '',
+        }
+      }
+
     handleFormSubmit( event ) {
         event.preventDefault();
         console.log(this.state);
