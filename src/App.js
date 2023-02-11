@@ -91,51 +91,24 @@ class App extends React.Component {
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 
-                <form action = "/saveinfo.php" onsubmit = "/saveinfo.php">
-                <p>What figure number are you annotating?</p>
-                <input 
-                type = "text"
-                name = "fignum"
-                id = "finum"
-                />
-                <p>Is the image black and white, greyscale or colour?</p>
-                <input 
-                type = "text"
-                name = "imgC"
-                id = "imgC"
-                />
-                    <p>Is the colour used for aesthetics or data visualisation (n/a if not colour)?</p>
-                    <input 
-                type = "text"
-                name = "colUse"
-                id = "colUse"
-                />
-                    <p>Is a colour mapping legend shown?</p>
-                    <input 
-                type = "text"
-                name = "mapL"
-                id = "mapL"
-                />
-                    <p>how many colours are used?</p>
-                    <input 
-                type = "text"
-                name = "colN"
-                id = "colN"
-                />
-                    <p>Is the colour mapping categorical or continuous?</p>
-                    <input 
-                type = "text"
-                name = "colMap"
-                id = "colMap"
-                />
-                    <p>On a scale of 1 to 5 how difficult is it to annotate this image?</p>
-                    <input 
-                type = "text"
-                name = "diff"
-                id = "diff"
-                />
-                    <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
-                </form>
+                <div>
+    <form action="/saveinfo.php">
+    <label>First Name</label>
+    <input type="text" id="fignum" name="fignum" placeholder="Your name.." />
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+
+    <label>Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" />
+
+
+    <label>Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    <input type="submit" value="Submit" />
+    </form>
+    </div>
+    
             </div>
         );
 
