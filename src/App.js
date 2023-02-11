@@ -66,29 +66,9 @@ class App extends React.Component {
         }
     }
 
-    render() {
-        document.title = "Figure Viewer";
-        let figureInfo = this.getFigureInfo(this.state.currentFigureIndex);
+    render(){
         return (
-            <div className="App">
-                <div className="metadata">
-                    <p>Title: {figureInfo.name}</p>
-                    <p>Year: {figureInfo.year}</p>
-                    <p>DOI: {figureInfo.doi}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
-                <div className="Figure">
-                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
-                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
-				<div className="questions">
-				</div>
-                <div className = "Card">
-                    <Box sx = {BasicCard()}/>
-                </div>
-                <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
-            </div>
+          <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
         );
     }
 
