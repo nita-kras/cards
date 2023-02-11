@@ -92,43 +92,43 @@ class App extends React.Component {
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 
                 <form action = "saveinfo.php">
-                <FormLabel component="legend">What is the current figure number?</FormLabel>
+                <p>What figure number are you annotating?</p>
                 <input 
                 type = "text"
                 name = "fignum"
                 id = "finum"
                 />
-                <FormLabel component="legend">Is the image black and white, greyscale or colour?</FormLabel>
+                <p>Is the image black and white, greyscale or colour?</p>
                 <input 
                 type = "text"
                 name = "imgC"
                 id = "imgC"
                 />
-                    <FormLabel component="legend">Is the colour used for aesthetics or data visualisation (n/a if not colour)?</FormLabel>
+                    <p>Is the colour used for aesthetics or data visualisation (n/a if not colour)?</p>
                     <input 
                 type = "text"
                 name = "colUse"
                 id = "colUse"
                 />
-                    <FormLabel component="legend">Is a colour mapping legend shown?</FormLabel>
+                    <p>Is a colour mapping legend shown?</pl>
                     <input 
                 type = "text"
                 name = "mapL"
                 id = "mapL"
                 />
-                    <FormLabel component="legend">how many colours are used?</FormLabel>
+                    <p>how many colours are used?</p>
                     <input 
                 type = "text"
                 name = "colN"
                 id = "colN"
                 />
-                    <FormLabel component="legend">Is the colour mapping categorical or continuous?</FormLabel>
+                    <p>Is the colour mapping categorical or continuous?</p>
                     <input 
                 type = "text"
                 name = "colMap"
                 id = "colMap"
                 />
-                    <FormLabel component="legend">On a scale of 1 to 5 how difficult is it to annotate this image?</FormLabel>
+                    <p>On a scale of 1 to 5 how difficult is it to annotate this image?</p>
                     <input 
                 type = "text"
                 name = "diff"
