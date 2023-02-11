@@ -4,7 +4,6 @@ import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
 
-var perf = require('./App.html');
 
 class App extends React.Component {
     constructor(props) {
@@ -87,7 +86,7 @@ class App extends React.Component {
                 <div className = "Card">
                     <Box sx = {BasicCard()}/>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
+
             </div>
         );
     }
