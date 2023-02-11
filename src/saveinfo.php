@@ -1,3 +1,6 @@
+<html>
+<body>
+    <h1>Annotate</h1>
 <?php
 $imgID = $_GET['fignum'];
 $imgC= $_GET['imgC'];
@@ -14,5 +17,7 @@ $db_name = 'psynk8_COMP2002';
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if ($conn->connect_errno)  die("failed to connect to database\n</body>\n</html>"); 
 $add = "INSERT INTO ImageInfo (imgID, imgColour, colourUse, mappingLegend, numColours, colourmapType, difficultyLevel) VALUES ('$imgid', '$imgC', '$colUse', '$mapL', '$numC','$colMap','$diff')";
-
 ?>
+
+</body>
+</html>
