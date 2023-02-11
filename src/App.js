@@ -22,7 +22,7 @@ class App extends React.Component {
             figuresLoaded: false
         };
         this.changeFigure = this.changeFigure.bind(this);
-        this.state1 = {
+        this.state = {
             fignum: '',
             imgC: '',
             colUse: '',
@@ -85,7 +85,7 @@ class App extends React.Component {
 
     handleFormSubmit( event ) {
         event.preventDefault();
-        console.log(this.state1);
+        console.log(this.state);
       }
 
     render() {
@@ -111,7 +111,7 @@ class App extends React.Component {
                 type = "text"
                 name = "fignum"
                 id = "finum"
-                value={this.state1.fignum}
+                value={this.state.fignum}
     onChange={e => this.setState({ fignum: e.target.value })}
                 />
                 <p>Is the image black and white, greyscale or colour?</p>
@@ -119,7 +119,7 @@ class App extends React.Component {
                 type = "text"
                 name = "imgC"
                 id = "imgC"
-                value={this.state1.imgC}
+                value={this.state.imgC}
     onChange={e => this.setState({ imgC: e.target.value })}
                 />
                     <p>Is the colour used for aesthetics or data visualisation (n/a if not colour)?</p>
@@ -127,7 +127,7 @@ class App extends React.Component {
                 type = "text"
                 name = "colUse"
                 id = "colUse"
-                value={this.state1.colUse}
+                value={this.state.colUse}
     onChange={e => this.setState({ colUse: e.target.value })}
                 />
                     <p>Is a colour mapping legend shown?</p>
@@ -135,7 +135,7 @@ class App extends React.Component {
                 type = "text"
                 name = "mapL"
                 id = "mapL"
-                value={this.state1.mapL}
+                value={this.state.mapL}
     onChange={e => this.setState({ mapL: e.target.value })}
                 />
                     <p>how many colours are used?</p>
@@ -143,7 +143,7 @@ class App extends React.Component {
                 type = "text"
                 name = "colN"
                 id = "colN"
-                value={this.state1.colN}
+                value={this.state.colN}
     onChange={e => this.setState({ colN: e.target.value })}
                 />
                     <p>Is the colour mapping categorical or continuous?</p>
@@ -151,7 +151,7 @@ class App extends React.Component {
                 type = "text"
                 name = "colMap"
                 id = "colMap"
-                value={this.state1.colMap}
+                value={this.state.colMap}
     onChange={e => this.setState({ colMap: e.target.value })}
                 />
                     <p>On a scale of 1 to 5 how difficult is it to annotate this image?</p>
@@ -159,7 +159,7 @@ class App extends React.Component {
                 type = "text"
                 name = "diff"
                 id = "diff"
-                value={this.state1.diff}
+                value={this.state.diff}
     onChange={e => this.setState({ diff: e.target.value })}
                 />
                     <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
