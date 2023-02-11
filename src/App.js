@@ -94,8 +94,7 @@ class App extends React.Component {
                 <FormLabel component="legend">What is the current figure number?</FormLabel>
                 <TextField
                     hiddenLabel
-                    id="fignum"
-                    defaultValue="Small"
+                    name ="fignum"
                     variant="filled"
                     size="small"
                     />
