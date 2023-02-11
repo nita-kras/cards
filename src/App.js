@@ -79,17 +79,7 @@ class App extends React.Component {
         let figureInfo = this.getFigureInfo(this.state.currentFigureIndex);
         return (
             <div className="App">
-                <div className="metadata">
-                    <p>Title: {figureInfo.name}</p>
-                    <p>Year: {figureInfo.year}</p>
-                    <p>DOI: {figureInfo.doi}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
-                <div className="Figure">
-                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
-                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
+
                 <div>
                 <form action = "/saveinfo.php" onsubmit = "/saveinfo.php">
                 <p>What figure number are you annotating?</p>
