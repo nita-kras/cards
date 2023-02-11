@@ -1,6 +1,4 @@
-<html>
-<body>
-    <h1>Annotate</h1>
+
 <?php
 $imgID = $_GET['fignum'];
 $imgC= $_GET['imgC'];
@@ -19,5 +17,3 @@ if ($conn->connect_errno)  die("failed to connect to database\n</body>\n</html>"
 $add = "INSERT INTO ImageInfo (imgID, imgColour, colourUse, mappingLegend, numColours, colourmapType, difficultyLevel) VALUES ('$imgid', '$imgC', '$colUse', '$mapL', '$numC','$colMap','$diff')";
 ?>
 
-</body>
-</html>
