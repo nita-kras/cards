@@ -22,6 +22,15 @@ class App extends React.Component {
             figuresLoaded: false
         };
         this.changeFigure = this.changeFigure.bind(this);
+        this.state1 = {
+            fignum: '',
+            imgC: '',
+            colUse: '',
+            mapL: '',
+            colN : '',
+            colMap : '',
+            diff : '',
+          }
     }
     
 
@@ -72,22 +81,11 @@ class App extends React.Component {
         }
     }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-          fignum: '',
-          imgC: '',
-          colUse: '',
-          mapL: '',
-          colN : '',
-          colMap : '',
-          diff : '',
-        }
-      }
+
 
     handleFormSubmit( event ) {
         event.preventDefault();
-        console.log(this.state);
+        console.log(this.state1);
       }
 
     render() {
