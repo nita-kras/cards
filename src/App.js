@@ -96,36 +96,43 @@ class App extends React.Component {
                 <input 
                 type = "text"
                 name = "fignum"
+                id = "finum"
                 />
                 <FormLabel component="legend">Is the image black and white, greyscale or colour?</FormLabel>
                 <input 
                 type = "text"
                 name = "imgC"
+                id = "imgC"
                 />
                     <FormLabel component="legend">Is the colour used for aesthetics or data visualisation (n/a if not colour)?</FormLabel>
                     <input 
                 type = "text"
                 name = "colUse"
+                id = "colUse"
                 />
                     <FormLabel component="legend">Is a colour mapping legend shown?</FormLabel>
                     <input 
                 type = "text"
                 name = "mapL"
+                id = "mapL"
                 />
                     <FormLabel component="legend">how many colours are used?</FormLabel>
                     <input 
                 type = "text"
                 name = "colN"
+                id = "colN"
                 />
                     <FormLabel component="legend">Is the colour mapping categorical or continuous?</FormLabel>
                     <input 
                 type = "text"
                 name = "colMap"
+                id = "colMap"
                 />
                     <FormLabel component="legend">On a scale of 1 to 5 how difficult is it to annotate this image?</FormLabel>
                     <input 
                 type = "text"
                 name = "diff"
+                id = "diff"
                 />
                     <Button type="submit" variant="outlined">Submit</Button>
 
