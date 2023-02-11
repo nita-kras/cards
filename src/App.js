@@ -113,42 +113,56 @@ class App extends React.Component {
                 type = "text"
                 name = "fignum"
                 id = "finum"
+                value={this.state.fignum}
+    onChange={e => this.setState({ fignum: e.target.value })}
                 />
                 <p>Is the image black and white, greyscale or colour?</p>
                 <input 
                 type = "text"
                 name = "imgC"
                 id = "imgC"
+                value={this.state.imgC}
+    onChange={e => this.setState({ imgC: e.target.value })}
                 />
                     <p>Is the colour used for aesthetics or data visualisation (n/a if not colour)?</p>
                     <input 
                 type = "text"
                 name = "colUse"
                 id = "colUse"
+                value={this.state.colUse}
+    onChange={e => this.setState({ colUse: e.target.value })}
                 />
                     <p>Is a colour mapping legend shown?</p>
                     <input 
                 type = "text"
                 name = "mapL"
                 id = "mapL"
+                value={this.state.mapL}
+    onChange={e => this.setState({ mapL: e.target.value })}
                 />
                     <p>how many colours are used?</p>
                     <input 
                 type = "text"
                 name = "colN"
                 id = "colN"
+                value={this.state.colN}
+    onChange={e => this.setState({ colN: e.target.value })}
                 />
                     <p>Is the colour mapping categorical or continuous?</p>
                     <input 
                 type = "text"
                 name = "colMap"
                 id = "colMap"
+                value={this.state.colMap}
+    onChange={e => this.setState({ colMap: e.target.value })}
                 />
                     <p>On a scale of 1 to 5 how difficult is it to annotate this image?</p>
                     <input 
                 type = "text"
                 name = "diff"
                 id = "diff"
+                value={this.state.diff}
+    onChange={e => this.setState({ diff: e.target.value })}
                 />
                     <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
                 </form>
