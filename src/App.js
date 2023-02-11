@@ -91,7 +91,7 @@ class App extends React.Component {
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 
-                <form action = "/saveinfo.php">
+                <form action = "saveinfo.php">
                 <FormLabel component="legend">What is the current figure number?</FormLabel>
                 <input 
                 type = "text"
