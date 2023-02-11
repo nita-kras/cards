@@ -110,7 +110,7 @@ class App extends React.Component {
                 name = "colUse"
                 id = "colUse"
                 />
-                    <p>Is a colour mapping legend shown?</pl>
+                    <p>Is a colour mapping legend shown?</p>
                     <input 
                 type = "text"
                 name = "mapL"
