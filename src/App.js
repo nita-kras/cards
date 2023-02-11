@@ -112,6 +112,7 @@ class App extends React.Component {
                         <FormGroup aria-label="position" row>
                             <TextField id="diff"  variant="filled" />
                      </FormGroup>
+                     <Button variant="raised" color = "blue" onClick = {("saveinfo.php")}>Submit</Button>
                 </FormControl>
             </div>
         );
