@@ -236,7 +236,7 @@ export default function BasicCard() {
         />
       
       </FormGroup>
-      <Button variant="raised">Submit</Button>
+      <Button variant="raised" color = "primary" >Submit</Button>
     </FormControl>
         </CardActions>
       </Card>
