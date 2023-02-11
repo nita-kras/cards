@@ -72,16 +72,29 @@ class App extends React.Component {
         }
     }
 
-    
+    handleFormSubmit( event ) {
+        event.preventDefault();
+        console.log(this.state);
+      }
 
     render() {
         document.title = "Figure Viewer";
         let figureInfo = this.getFigureInfo(this.state.currentFigureIndex);
         return (
             <div className="App">
-
+                <div className="metadata">
+                    <p>Title: {figureInfo.name}</p>
+                    <p>Year: {figureInfo.year}</p>
+                    <p>DOI: {figureInfo.doi}</p>
+                </div>
+                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
+                <div className="Figure">
+                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
+                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
+                </div>
+                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
                 <div>
-                <form action = "/saveinfo.php" onsubmit = "/saveinfo.php">
+                <form action = "/saveinfo.php" >
                 <p>What figure number are you annotating?</p>
                 <input 
                 type = "text"
@@ -127,21 +140,12 @@ class App extends React.Component {
                     <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
                 </form>
                 </div>
-                <div className="metadata">
-                    <p>Title: {figureInfo.name}</p>
-                    <p>Year: {figureInfo.year}</p>
-                    <p>DOI: {figureInfo.doi}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
-                <div className="Figure">
-                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
-                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
-                </div>
-                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
             </div>
+            
+            
         );
 
-
+            
         
     }
 
