@@ -90,6 +90,7 @@ class App extends React.Component {
                     <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
+
                 <form action = "/saveinfo.php">
                 <FormLabel component="legend">What is the current figure number?</FormLabel>
                 <input 
@@ -97,29 +98,35 @@ class App extends React.Component {
                 name = "fignum"
                 />
                 <FormLabel component="legend">Is the image black and white, greyscale or colour?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="imgC"  variant="filled" />
-                    </FormGroup>
+                <input 
+                type = "text"
+                name = "imgC"
+                />
                     <FormLabel component="legend">Is the colour used for aesthetics or data visualisation (n/a if not colour)?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="colUse"  variant="filled" />
-                    </FormGroup>
+                    <input 
+                type = "text"
+                name = "colUse"
+                />
                     <FormLabel component="legend">Is a colour mapping legend shown?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="mapL"  variant="filled" />
-                    </FormGroup>
+                    <input 
+                type = "text"
+                name = "mapL"
+                />
                     <FormLabel component="legend">how many colours are used?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="colN"  variant="filled" />
-                    </FormGroup>
+                    <input 
+                type = "text"
+                name = "colN"
+                />
                     <FormLabel component="legend">Is the colour mapping categorical or continuous?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="colmap"  variant="filled" />
-                    </FormGroup>
+                    <input 
+                type = "text"
+                name = "colMap"
+                />
                     <FormLabel component="legend">On a scale of 1 to 5 how difficult is it to annotate this image?</FormLabel>
-                        <FormGroup aria-label="position" row>
-                            <TextField id="diff"  variant="filled" />
-                    </FormGroup>
+                    <input 
+                type = "text"
+                name = "diff"
+                />
                     <Button type="submit" variant="outlined">Submit</Button>
 
                 </form>
