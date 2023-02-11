@@ -1,4 +1,6 @@
-
+header("Access-Control-Allow-Origin: *");
+  $rest_json = file_get_contents("php://input");
+  $_GET = json_decode($rest_json, true);
 <?php
 $imgID = $_GET['fignum'];
 $imgC= $_GET['imgC'];
