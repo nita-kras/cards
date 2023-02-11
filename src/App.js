@@ -3,6 +3,7 @@ import './App.css';
 import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
+import  Radio  from '@mui/material/Radio';
 
 
 class App extends React.Component {
@@ -88,9 +89,6 @@ class App extends React.Component {
                     <Box sx = {BasicCard()}/>
                 </div>
                 <Form>
-                    <Checkbox name="inputA1" label="Option one" defaultChecked={true} />
-                    <Checkbox name="inputA2" label="Option two" />
-                    <Checkbox name="inputA3" label="Option three is disabled" disabled={true} />
                     <Radio name="inputB" label="Option one" defaultChecked={true} />
                     <Radio name="inputB" label="Option two" />
                     <Radio name="inputB" label="Option three is disabled" disabled={true} />
