@@ -10,6 +10,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
+import { Radio } from '@material-ui/core';
 
 
 
@@ -31,20 +32,20 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="colour"
-          control={<Checkbox />}
+          control={<Radio />}
           label="colour"
           labelPlacement="start"
           
         />
         <FormControlLabel
           value="greyscale"
-          control={<Checkbox />}
+          control={<Radio />}
           label="greyscale"
           labelPlacement="start"
         />
         <FormControlLabel
           value="black and white"
-          control={<Checkbox />}
+          control={<Radio />}
           label="black and white"
           labelPlacement="start"
         />
@@ -65,19 +66,19 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="Aesthetics"
-          control={<Checkbox />}
+          control={<Radio />}
           label="Aesthetics"
           labelPlacement="start"
         />
         <FormControlLabel
           value="Data Visualisation"
-          control={<Checkbox />}
+          control={<Radio />}
           label="Data Visualisation"
           labelPlacement="start"
         />
         <FormControlLabel
           value="n/a- colour not used"
-          control={<Checkbox />}
+          control={<Radio />}
           label="n/a- colour not used"
           labelPlacement="start"
         />
@@ -98,19 +99,19 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="Yes"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="Yes"
           labelPlacement="start"
         />
         <FormControlLabel
           value="No"
-          control={<Checkbox />}
+          control={<Radio />}
           label="No"
           labelPlacement="start"
         />
         <FormControlLabel
           value="not sure"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="not sure"
           labelPlacement="start"
         />
@@ -131,20 +132,20 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="Under 10"
-          control={<Checkbox />}
+          control={<Radio />}
           label="Under 10"
           labelPlacement="start"
         />
         <TextField id="filled-basic" label="How Many?" variant="filled" />
         <FormControlLabel
           value="10+"
-          control={<Checkbox />}
+          control={<Radio />}
           label="10+"
           labelPlacement="start"
         />
         <FormControlLabel
           value="not sure"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="not sure"
           labelPlacement="start"
         />
@@ -165,19 +166,19 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="Categorical"
-          control={<Checkbox />}
+          control={<Radio />}
           label="Categorical"
           labelPlacement="start"
         />
         <FormControlLabel
           value="Continuous"
-          control={<Checkbox />}
+          control={<Radio />}
           label="Continuous"
           labelPlacement="start"
         />
         <FormControlLabel
           value="not sure"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="not sure"
           labelPlacement="start"
         />
@@ -198,37 +199,37 @@ export default function BasicCard() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="1"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="1"
           labelPlacement="start"
         />
         <FormControlLabel
           value="2"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="2"
           labelPlacement="start"
         />
         <FormControlLabel
           value="3"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="3"
           labelPlacement="start"
         />
                 <FormControlLabel
           value="4"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="4"
           labelPlacement="start"
         />
                 <FormControlLabel
           value="5"
-          control={<Checkbox />}
+          control={<Radio/>}
           label="5"
           labelPlacement="start"
         />
                 <FormControlLabel
           value="not sure"
-          control={<Checkbox />}
+          control={<Radio />}
           label="not sure"
           labelPlacement="start"
         />
