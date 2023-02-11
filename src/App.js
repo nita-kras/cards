@@ -87,11 +87,6 @@ class App extends React.Component {
                     <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
-				<div className="questions">
-				</div>
-                <div className = "Card">
-                    <Box sx = {BasicCard()}/>
-                </div>
                 <FormControl component="fieldset">
                     <FormLabel component="legend">type in an exact number or estimate</FormLabel>
                         <FormGroup aria-label="position" row>
