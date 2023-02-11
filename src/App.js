@@ -134,7 +134,7 @@ class App extends React.Component {
                 name = "diff"
                 id = "diff"
                 />
-                    <input type = "submit" value = "Submit Annotations"/>
+                    <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
                 </form>
             </div>
         );
