@@ -203,7 +203,6 @@ export default function BasicCard() {
           control={<Radio/>}
           label="3"
           labelPlacement="start"
-          checked={this.state.selectedOption === 'saveinfo.php'}
         />
                 <FormControlLabel
           value="4"
