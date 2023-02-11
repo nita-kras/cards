@@ -90,7 +90,7 @@ class App extends React.Component {
                     <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
-                <form action = "/saveinfo.php">
+                <form action = "saveinfo.php">
                     <FormControl component="fieldset" >
                     <FormLabel component="legend">What is the current figure number?</FormLabel>
                             <FormGroup aria-label="position" row>
