@@ -88,15 +88,29 @@ class App extends React.Component {
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">type in an exact number or estimate</FormLabel>
+                <FormLabel component="legend">Is the image black and white, greyscale or colour?</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="imgC"  variant="filled" />
+                     </FormGroup>
+                     <FormLabel component="legend">Is the colour used for aesthetics or data visualisation (n/a if not colour)?</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="colUse"  variant="filled" />
+                     </FormGroup>
+                     <FormLabel component="legend">Is a colour mapping legend shown?</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="mapL"  variant="filled" />
+                     </FormGroup>
+                     <FormLabel component="legend">how many colours are used?</FormLabel>
                         <FormGroup aria-label="position" row>
                             <TextField id="colN"  variant="filled" />
-                            <FormControlLabel
-                            value="not sure"
-                            control={<Radio/>}
-                            label="not sure"
-                            labelPlacement="start"
-                        />
+                     </FormGroup>
+                    <FormLabel component="legend">Is the colour mapping categorical or continuous?</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="colmap"  variant="filled" />
+                     </FormGroup>
+                     <FormLabel component="legend">On a scale of 1 to 5 how difficult is it to annotate this image?</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="diff"  variant="filled" />
                      </FormGroup>
                 </FormControl>
             </div>
