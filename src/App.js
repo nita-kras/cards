@@ -127,24 +127,17 @@ class App extends React.Component {
                     <input type = "submit" onClick={e => this.handleFormSubmit(e)} value = "Submit Annotations"/>
                 </form>
                 </div>
-                <div>
-    <form action="/action_page.php">
-    <label>First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-    <label>Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-
-
-    <label>Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email" />
-
-
-    <label>Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-    <input type="submit" value="Submit" />
-    </form>
-    </div>
-   
+                <div className="metadata">
+                    <p>Title: {figureInfo.name}</p>
+                    <p>Year: {figureInfo.year}</p>
+                    <p>DOI: {figureInfo.doi}</p>
+                </div>
+                <button className="buttons" onClick={() => this.changeFigure(false)}>Previous</button>
+                <div className="Figure">
+                    <Figure imgUrl={this.getImgURL(this.state.currentFigureIndex)}/>
+                    <p id={"figure-label"}>Figure {this.state.currentFigureIndex + 1}</p>
+                </div>
+                <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
             </div>
         );
 
