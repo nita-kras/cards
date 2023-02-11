@@ -87,6 +87,7 @@ class App extends React.Component {
                 <div className = "Card">
                     <Box sx = {BasicCard()}/>
                 </div>
+                <div dangerouslySetInnerHTML={{ __html: perf }} ></div>
             </div>
         );
     }
