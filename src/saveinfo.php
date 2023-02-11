@@ -1,11 +1,11 @@
 <?php
 $imgID = $_GET['currentFigureIndex'];
-$imgC= $_GET['actID'];
-$colUse = $_GET['price'];
-$mapL = $_GET['year'];
+$imgC= $_GET['imgC'];
+$colUse = $_GET['colUse'];
+$mapL = $_GET['mapL'];
 $numC = $_GET['colN'];
-$colMap = $_GET['genre'];
-$diff = $_GET['genre'];
+$colMap = $_GET['colmap'];
+$diff = $_GET['diff'];
 $db_host = 'mysql.cs.nott.ac.uk';
 $db_user = 'psynk8_COMP2002'; 
 $db_pass = 'FPXKIA'; 

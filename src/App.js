@@ -10,6 +10,8 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import './saveinfo.php';
+
 
 class App extends React.Component {
     constructor(props) {
