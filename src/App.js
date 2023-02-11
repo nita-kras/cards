@@ -91,7 +91,7 @@ class App extends React.Component {
                 </div>
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
 
-                <form action = "./saveinfo.php" onsubmit = "saveinfo.php">
+                <form action = "/saveinfo.php" onsubmit = "/saveinfo.php">
                 <p>What figure number are you annotating?</p>
                 <input 
                 type = "text"
