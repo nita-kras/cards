@@ -1,5 +1,5 @@
 <?php
-$imgID = $_GET['currentFigureIndex'];
+$imgID = $_GET['fignum'];
 $imgC= $_GET['imgC'];
 $colUse = $_GET['colUse'];
 $mapL = $_GET['mapL'];

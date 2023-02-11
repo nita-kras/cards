@@ -92,6 +92,10 @@ class App extends React.Component {
                 <button className="buttons" onClick={() => this.changeFigure(true)}>Next</button>
                 <form action = "/saveinfo.php">
                     <FormControl component="fieldset" >
+                    <FormLabel component="legend">What is the current figure number?</FormLabel>
+                            <FormGroup aria-label="position" row>
+                                <TextField id="fignum"  variant="filled" />
+                        </FormGroup>
                     <FormLabel component="legend">Is the image black and white, greyscale or colour?</FormLabel>
                             <FormGroup aria-label="position" row>
                                 <TextField id="imgC"  variant="filled" />
