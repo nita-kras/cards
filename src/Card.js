@@ -124,7 +124,7 @@ export default function BasicCard() {
       <Card variant="outlined" component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
       <CardContent>
           <Typography variant="h5" component="div">
-            How many colour are used in the image?
+            How many colours are used in the image?
           </Typography>
         </CardContent>
         <CardActions>
@@ -219,7 +219,7 @@ export default function BasicCard() {
 
       
       </FormGroup>
-      <Button variant="raised" color = "blue" >Submit</Button>
+      <Button variant="raised" color = "blue" onClick = {("saveinfo.php")}>Submit</Button>
     </FormControl>
         </CardActions>
       </Card>
