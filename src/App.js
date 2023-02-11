@@ -4,8 +4,11 @@ import Figure from "./Figure";
 import Box from "./Card";
 import BasicCard from './Card';
 import  Radio  from '@mui/material/Radio';
-import Form from '@mui/material/Form';
-
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import TextField from '@mui/material/TextField';
 
 class App extends React.Component {
     constructor(props) {
@@ -89,11 +92,18 @@ class App extends React.Component {
                 <div className = "Card">
                     <Box sx = {BasicCard()}/>
                 </div>
-                <Form>
-                    <Radio name="inputB" label="Option one" defaultChecked={true} />
-                    <Radio name="inputB" label="Option two" />
-                    <Radio name="inputB" label="Option three is disabled" disabled={true} />
-                </Form>
+                <FormControl component="fieldset">
+                    <FormLabel component="legend">type in an exact number or estimate</FormLabel>
+                        <FormGroup aria-label="position" row>
+                            <TextField id="filled-basic"  variant="filled" />
+                            <FormControlLabel
+                            value="not sure"
+                            control={<Radio/>}
+                            label="not sure"
+                            labelPlacement="start"
+                        />
+                     </FormGroup>
+                </FormControl>
             </div>
         );
 
