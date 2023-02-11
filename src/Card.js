@@ -129,21 +129,9 @@ export default function BasicCard() {
         </CardContent>
         <CardActions>
         <FormControl component="fieldset">
-      <FormLabel component="legend">choose 1</FormLabel>
+      <FormLabel component="legend">type in an exact number or estimate</FormLabel>
       <FormGroup aria-label="position" row>
-        <FormControlLabel
-          value="Under 10"
-          control={<Radio />}
-          label="Under 10"
-          labelPlacement="start"
-        />
-        <TextField id="filled-basic" label="How Many?" variant="filled" />
-        <FormControlLabel
-          value="10+"
-          control={<Radio />}
-          label="10+"
-          labelPlacement="start"
-        />
+        <TextField id="filled-basic"  variant="filled" />
         <FormControlLabel
           value="not sure"
           control={<Radio/>}
@@ -228,12 +216,7 @@ export default function BasicCard() {
           label="5"
           labelPlacement="start"
         />
-                <FormControlLabel
-          value="not sure"
-          control={<Radio />}
-          label="not sure"
-          labelPlacement="start"
-        />
+
       
       </FormGroup>
       <Button variant="raised" color = "blue" >Submit</Button>
